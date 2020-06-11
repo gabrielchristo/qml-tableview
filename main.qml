@@ -12,15 +12,16 @@ ApplicationWindow {
     title: qsTr("QML TableView Example - by Gabriel Christo")
 
     property var combobox_model: ["Value 1", "Value 2", "Value 3"] // combobox stringlist
-    property var horizontal_header_data: ["Combobox", "Checkbox", "TextField", "Spinbox", "Slider"] // table header
+    property var horizontal_header_data: ["Combobox", "Checkbox", "TextFields", "Spinbox", "Slider"] // table header
 
     // updates model's row number
     function update_table_model(new_rows_number){
-        // row data model
+        // row data model (must be paired with table model)
         let row_data = {
             combobox_index: 0,
             checkbox_state: 0,
-            textfield_string: "",
+            textfield_1_string: "",
+            textfield_2_string: "",
             spinbox_value: 0,
             slider_value: 0
         }
@@ -65,7 +66,9 @@ ApplicationWindow {
             Button {
                 text: "Create Json"
                 // passing table model data as string to backend
-                onClicked: JsonUtils.saveJson(JSON.stringify(tablemodel.rows))
+                onClicked:{
+                    JsonUtils.saveJson(JSON.stringify(tablemodel.rows))
+                 }
             }
             Button {
                 text: "Load Json"
@@ -97,7 +100,7 @@ ApplicationWindow {
             ScrollIndicator.vertical: ScrollIndicator { }
 
             // width and height providers
-            property var columnWidths: [100, 100, 100, 100, 100]
+            property var columnWidths: [100, 80, 120, 100, 100]
             columnWidthProvider: function(column){ return columnWidths[column] }
             rowHeightProvider: function (column) { return 25 }
 
@@ -112,7 +115,7 @@ ApplicationWindow {
                         width: tableview.columnWidthProvider(modelData); height: 30
                         text: horizontal_header_data[index]
                         padding: 10
-                        verticalAlignment: Text.AlignVCenter
+                        verticalAlignment: Text.AlignVCenter; horizontalAlignment: Text.AlignHCenter
                         color: "white"
                         background: Rectangle { color: "#b5b5b5" }
                     }
@@ -130,7 +133,7 @@ ApplicationWindow {
                         width: 30; height: tableview.rowHeightProvider(modelData)
                         text: index
                         padding: 10
-                        verticalAlignment: Text.AlignVCenter
+                        verticalAlignment: Text.AlignVCenter; horizontalAlignment: Text.AlignHCenter
                         color: "white"
                         background: Rectangle { color: "#b5b5b5" }
                     }
@@ -142,7 +145,7 @@ ApplicationWindow {
                 id: tablemodel
                 TableModelColumn{ display: "combobox_index" }
                 TableModelColumn{ display: "checkbox_state" }
-                TableModelColumn{ display: "textfield_string" }
+                TableModelColumn{ display: "textfield_1_string"; edit: "textfield_2_string" } // using two roles
                 TableModelColumn{ display: "spinbox_value" }
                 TableModelColumn{ display: "slider_value" }
             }
@@ -166,11 +169,22 @@ ApplicationWindow {
                 }
                 DelegateChoice {
                     column: 2
-                    delegate: TextField {
-                        text: model.display
-                        placeholderText: "placeholder"
-                        selectByMouse: true
-                        onTextEdited: model.display = this.text
+                    delegate: RowLayout { // two textfields in same column model
+                        spacing: 0
+                        TextField {
+                            implicitWidth: parent.width / 2
+                            text: model.display
+                            placeholderText: "x"
+                            selectByMouse: true
+                            onTextEdited: model.display = this.text
+                        }
+                        TextField {
+                            implicitWidth: parent.width / 2
+                            text: model.edit
+                            placeholderText: "y"
+                            selectByMouse: true
+                            onTextEdited: model.edit = this.text
+                        }
                     }
                 }
                 DelegateChoice {

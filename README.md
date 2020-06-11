@@ -6,4 +6,4 @@ A very simple qml dynamic tableview example, with:
 - vertical and horizontal headers
 - json serialization
 
-<img src="screenshot.png" width="640" height="480">
+<img src="screenshot.png" width="770" height="611">

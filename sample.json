@@ -4,125 +4,127 @@
         "combobox_index": 0,
         "slider_value": 3,
         "spinbox_value": 1,
-        "textfield_string": "1"
+        "textfield_1_string": "1",
+        "textfield_2_string": ""
+    },
+    {
+        "checkbox_state": 0,
+        "combobox_index": 1,
+        "slider_value": 5,
+        "spinbox_value": 2,
+        "textfield_1_string": "2",
+        "textfield_2_string": "2"
+    },
+    {
+        "checkbox_state": 2,
+        "combobox_index": 2,
+        "slider_value": 10,
+        "spinbox_value": 3,
+        "textfield_1_string": "3",
+        "textfield_2_string": ""
     },
     {
         "checkbox_state": 0,
         "combobox_index": 0,
-        "slider_value": 11,
-        "spinbox_value": 2,
-        "textfield_string": "2"
+        "slider_value": 15,
+        "spinbox_value": 4,
+        "textfield_1_string": "4",
+        "textfield_2_string": "4"
     },
     {
         "checkbox_state": 2,
         "combobox_index": 1,
-        "slider_value": 17,
-        "spinbox_value": 3,
-        "textfield_string": "3"
+        "slider_value": 18,
+        "spinbox_value": 5,
+        "textfield_1_string": "5",
+        "textfield_2_string": ""
+    },
+    {
+        "checkbox_state": 0,
+        "combobox_index": 2,
+        "slider_value": 24,
+        "spinbox_value": 6,
+        "textfield_1_string": "6",
+        "textfield_2_string": "6"
+    },
+    {
+        "checkbox_state": 2,
+        "combobox_index": 0,
+        "slider_value": 26,
+        "spinbox_value": 0,
+        "textfield_1_string": "7",
+        "textfield_2_string": ""
     },
     {
         "checkbox_state": 0,
         "combobox_index": 1,
         "slider_value": 30,
-        "spinbox_value": 4,
-        "textfield_string": "4"
-    },
-    {
-        "checkbox_state": 2,
-        "combobox_index": 2,
-        "slider_value": 18,
-        "spinbox_value": 5,
-        "textfield_string": "5"
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 2,
-        "slider_value": 10,
-        "spinbox_value": 6,
-        "textfield_string": "6"
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
         "spinbox_value": 0,
-        "textfield_string": ""
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
-        "spinbox_value": 0,
-        "textfield_string": ""
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
-        "spinbox_value": 0,
-        "textfield_string": ""
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
-        "spinbox_value": 0,
-        "textfield_string": ""
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
-        "spinbox_value": 0,
-        "textfield_string": ""
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
-        "spinbox_value": 0,
-        "textfield_string": ""
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
-        "spinbox_value": 0,
-        "textfield_string": ""
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
-        "spinbox_value": 0,
-        "textfield_string": ""
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
-        "spinbox_value": 0,
-        "textfield_string": ""
-    },
-    {
-        "checkbox_state": 0,
-        "combobox_index": 0,
-        "slider_value": 0,
-        "spinbox_value": 0,
-        "textfield_string": ""
+        "textfield_1_string": "",
+        "textfield_2_string": ""
     },
     {
         "checkbox_state": 2,
         "combobox_index": 2,
         "slider_value": 32,
-        "spinbox_value": 16,
-        "textfield_string": "index 16"
+        "spinbox_value": 0,
+        "textfield_1_string": "",
+        "textfield_2_string": ""
+    },
+    {
+        "checkbox_state": 2,
+        "combobox_index": 0,
+        "slider_value": 26,
+        "spinbox_value": 0,
+        "textfield_1_string": "",
+        "textfield_2_string": ""
     },
     {
         "checkbox_state": 0,
         "combobox_index": 0,
+        "slider_value": 22,
+        "spinbox_value": 0,
+        "textfield_1_string": "",
+        "textfield_2_string": ""
+    },
+    {
+        "checkbox_state": 2,
+        "combobox_index": 0,
+        "slider_value": 17,
+        "spinbox_value": 0,
+        "textfield_1_string": "",
+        "textfield_2_string": ""
+    },
+    {
+        "checkbox_state": 0,
+        "combobox_index": 0,
+        "slider_value": 12,
+        "spinbox_value": 0,
+        "textfield_1_string": "",
+        "textfield_2_string": "33"
+    },
+    {
+        "checkbox_state": 2,
+        "combobox_index": 0,
+        "slider_value": 9,
+        "spinbox_value": 0,
+        "textfield_1_string": "",
+        "textfield_2_string": "44"
+    },
+    {
+        "checkbox_state": 0,
+        "combobox_index": 0,
+        "slider_value": 5,
+        "spinbox_value": 0,
+        "textfield_1_string": "",
+        "textfield_2_string": "55"
+    },
+    {
+        "checkbox_state": 2,
+        "combobox_index": 2,
         "slider_value": 0,
         "spinbox_value": 0,
-        "textfield_string": ""
+        "textfield_1_string": "",
+        "textfield_2_string": ""
     }
 ]
